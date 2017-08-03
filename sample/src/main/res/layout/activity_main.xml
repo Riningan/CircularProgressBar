@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.riningan.circularprogressbarproject.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Start" />
+
+        <Button
+            android:id="@+id/btnLoaded40"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Loaded 40%" />
+
+        <Button
+            android:id="@+id/btnLoaded80"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Loaded 80%" />
+
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/seekBar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+        android:layout_margin="10dp" />
+
+    <SeekBar
+        android:id="@+id/seekBar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekBar1"
+        android:layout_margin="10dp" />
+
+    <RadioGroup
+        android:id="@+id/radio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekBar2"
+        android:layout_margin="10dp">
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="Direct" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Invert" />
+
+    </RadioGroup>
+
+    <com.riningan.widget.CircularProgressBar
+        android:id="@+id/circularProgressBar"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_below="@+id/radio"
+        android:layout_centerHorizontal="true"
+        app:cpb_background_color="@color/colorPrimary"
+        app:cpb_background_width="@dimen/default_cpb_progress_width"
+        app:cpb_progress_color="@android:color/holo_blue_light"
+        app:cpb_progress_value="50"
+        app:cpb_progress_width="@dimen/default_cpb_progress_width"
+        app:cpb_state="progress_direct" />
+
+</RelativeLayout>
