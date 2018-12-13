@@ -1,4 +1,7 @@
 # CircularProgressBar
+
+[ ![Download](https://api.bintray.com/packages/riningan/AndroidMaven/CircularProgressBar/images/download.svg) ](https://bintray.com/riningan/AndroidMaven/CircularProgressBar/_latestVersion)
+
 Android circlular progress bat with two state: loading and show value
 
 DEMO
