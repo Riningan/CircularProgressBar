@@ -13,6 +13,9 @@ import android.view.View;
 import android.view.animation.DecelerateInterpolator;
 import android.view.animation.LinearInterpolator;
 
+import com.riningan.widget.circularprogressbar.R;
+
+
 /**
  * Created by Vadim Akhmarov on 19.07.2017.
  * Project CircularProgressBarProject

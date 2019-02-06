@@ -17,7 +17,7 @@ Add dependencies in build.gradle of your module.
 
 ```groovy
 	dependencies {
-		compile 'com.riningan.widget:circularprogressbar:1.0'
+		compile 'com.riningan.widget:circularprogressbar:1.1'
 	}
 ```
 

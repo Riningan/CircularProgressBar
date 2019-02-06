@@ -1,4 +1,4 @@
-package com.riningan.circularprogressbarproject;
+package com.riningan.circularprogressbar;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
